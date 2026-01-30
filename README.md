@@ -84,18 +84,24 @@ console.log(count); // 3
 
 
 // 8
-let str = "hello";
-let reversed = "";
-for (let i = str.length - 1; i >= 0; i--) {
-    reversed += str[i];
+let word = "hello";
+let result = "";
+let index = word.length - 1;
+
+while (index >= 0) {
+    let letter = word[index];
+    result = result + letter;
+    index = index - 1;
 }
-console.log(reversed); // "olleh"
+
+console.log(result);
+
+
 // 9 
 let num = 4;
 for (let i = 1; i <= 10; i++) {
     console.log(`${num} * ${i} = ${num * i}`);
 }
-
 
 
 
